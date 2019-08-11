@@ -14,7 +14,6 @@ $(document).ready(function() {
 	};
 	
 
-
 /*Скрипт на Слик слайдер*/
 	var popularCategoriesSlider = function() {
 
@@ -128,6 +127,17 @@ $(document).ready(function() {
 	};
 
 
+	var reviewLine = function() {
+		$(document).on('click','.review-line__number',function() {
+			var left = $(this).parent().position().left;
+			$(this).parent().siblings().removeClass('review-line__item--active');
+			$(this).parent().addClass('review-line__item--active');
+			$('.review-line').css('width',left - 1);
+		});
+	};
+
+
+
  
  sandwich();
 	popularCategoriesSlider();
@@ -136,6 +146,7 @@ $(document).ready(function() {
 	locationChoose();
 	popupLink();
 	formValidate();
+	reviewLine();
 /*......*/
 
 });

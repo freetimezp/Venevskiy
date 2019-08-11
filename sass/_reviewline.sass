@@ -10,11 +10,13 @@
 .review-line
 	position: absolute
 	height: 100%
+	width: 0
 	left: 1px 
 	z-index: 1
 	background-color: #F4E10A
+	transition: all 0.6s ease
 	&__wrapper
-	 margin: 30px 0
+	 margin: 30px 10px
 	 position: relative
 	&__inner
 	 display: flex
@@ -28,6 +30,7 @@
 	 border-left: 1px solid #ededed
 	 margin-bottom: -6px
 	 position: relative
+	 transition: all 0.5s ease
 	 &:before 
 	  content: attr(data-fast-review)
 	  display: block
@@ -37,6 +40,7 @@
 	  top: -20px
 	  left: 0
 	  white-space: nowrap
+	  transition: all 0.4s ease
 	 &.review-line__item
 	  &--center
 	   &:before 
@@ -46,6 +50,12 @@
 		  &:before 
 		   left: auto 
 		   right: 0
+		&--active
+		 border-left: 1px solid #E3E60C
+		 .review-line__number
+		  background-color: #E3E60C
+		 &.review-line__item:before 
+		  color: #4A4747
 	&__number
 	 font-size: 14px
 	 line-height: 24px
