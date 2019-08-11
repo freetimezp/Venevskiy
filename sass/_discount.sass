@@ -1,0 +1,107 @@
+.discount
+	&-wrapper
+	 display: flex
+	 align-items: center
+	&-header
+	 display: flex 
+	 align-items: center
+	 margin-bottom: 15px
+	&-item
+	 flex: 1
+	 margin-right: 20px
+	 border: 2px solid transparent
+	 transition: all 0.6s ease
+	 max-width: 275px
+	 border-radius: 4px
+	 &:last-child
+	  margin-right: 0
+	 &:hover
+	  border: 2px solid #E4D52A
+	  box-shadow: 0 0 30px rgba(0,0,0, 0.3)
+	  .discount-item__footer
+	   opacity: 1
+	 &__header
+	  display: block
+	  height: 140px 
+	  position: relative
+	  padding: 5px
+	 &__image
+	  background-size: cover
+	  max-width: 100%
+	  max-height: 140px 
+	 &__body
+	  display: block
+   padding: 5px
+	 &__button
+	  justify-content: center
+	  background-color: #E4D52A
+	  border: 0
+	  border-radius: 4px
+	  cursor: pointer
+	  line-height: 20px
+	  padding: 10px 20px
+	  width: 100%
+	  display: flex
+	  align-items: center
+	  &-icon
+	   font-size: 20px
+	  &-text
+	   margin-left: 10px
+	   font-weight: 700
+	 &__marks
+	  position: absolute 
+	  left: 10px
+	  top: 0
+	  display: flex
+	 &__mark
+	  margin-right: 10px
+	  height: 30px
+	  line-height: 30px
+	  padding: 0 5px
+	  border-radius: 0 0 4px 4px
+	  font-weight: 700
+	  font-size: 14px
+	  &:last-child
+	   margin-right: 0
+	  &--yellow
+	   background-color: #E4D52A
+	   color: #000
+	  &--green
+	   background-color: #0EC328
+	   color: #fff
+	 &__info
+	  display: flex
+	  align-items: center
+	  font-size: 12px
+	  margin-bottom: 15px
+	 &__label
+	  text-transform: uppercase
+	  color: #60CD83
+	  font-weight: 700
+	  margin-right: 5px
+	 &__value
+	  color: #4A4444
+	 &__title
+	  margin-bottom: 20px
+	  height: 55px
+	 &__name
+	  font-weight: 700
+	  font-size: 13px
+	 &__price
+	  display: flex
+	  align-items: center
+	  margin-bottom: 20px
+	  &-old
+	   text-decoration: line-through	
+	   font-size: 13px
+	   color: #797272
+	   margin-right: 15px
+	  &-current
+	   font-size: 18px
+	   font-weight: 700
+	 &__footer
+	  opacity: 0
+	  transition: all 0.6s ease
+
+
+

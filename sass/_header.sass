@@ -1,0 +1,245 @@
+.location
+	display: flex
+	align-items: center
+	flex: 0 0 200px
+	width: 200px
+	position: relative
+	&-logo
+	 color: #625F5F
+	 margin-right: 10px
+	 cursor: pointer
+	 flex-shrink: 0
+	&-header
+	 display: flex 
+	 align-items: center
+	 cursor: pointer
+	 position: relative
+	&-current
+	 cursor: pointer
+	 padding-right: 15px
+	 display: block
+	 white-space: nowrap
+	 text-overflow: ellipsis
+	 overflow: hidden
+	 max-width: 200px
+	 margin-right: 10px
+	 &::after
+	  position: absolute
+	  right: 0
+	  top: 6px
+	  content: ''
+	  width: 0
+	  height: 0
+	  border-style: solid
+	  border-width: 8px 9px 0 9px
+	  border-color: #000 transparent transparent transparent
+	  margin-left: 10px
+	  cursor: pointer
+	&-question
+	 position: absolute
+	 top: 40px
+	 left: 10px
+	 background-color: #EBE7E7
+	 display: flex 
+	 align-items: center
+	 white-space: nowrap 
+	 padding: 10px
+	 z-index: 1
+	 border-radius: 4px
+	 border: 1px solid #EBE7E7
+	 box-shadow: 1px 2px 15px rgba(0,0,0, 0.2)
+	 & > *
+	  &:not(:last-child)
+	   margin-right: 15px
+	 &:before 
+   content: ''
+   width: 0
+   height: 0
+   border: 10px solid transparent
+   border-bottom: 10px solid #EBE7E7
+   top: -20px
+   position: absolute
+   left: 60px
+   z-index: 1
+	 &__text
+	  font-size: 18px
+	  line-height: 1.44
+	 &__buttons
+	  display: flex 
+	  align-items: center
+	  & > *
+	   &:not(:last-child)
+	    margin-right: 10px
+	 &__button
+	  white-space: nowrap 
+	  padding: 5px 10px
+	  border-radius: 4px 
+	  font-weight: 600
+	  display: inline-block
+	  cursor: pointer
+	  &--green
+		  background-color: #249016
+		  border: 2px solid #249016
+		  color: #fff 
+		 &--white
+		  background-color: #fff
+		  border: 2px solid #249016
+		  color: #249016
+	&-choose
+	 display: none
+	 position: absolute
+	 width: 210px
+	 top: 10px
+	 left: 20px
+	 background-color: #fff 
+	 z-index: 1
+	 box-shadow: 0 0 30px 0 rgba(0,0,0, 0.2)
+  border-radius: 4px
+  border: 2px solid #E9E717
+  &__header
+   border-bottom: 2px solid #E9E717
+  &__input
+   width: 100%
+   border: 0
+   padding: 10px 15px
+   font-size: 12px
+  &__body
+   position: relative
+   height: auto 
+   max-height: 240px
+   display: flex 
+   flex-direction: column
+   &:before 
+    content: ''
+    height: 30px
+    display: block 
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    background-image: linear-gradient(to bottom, #fff, rgba(255,255,255, 0))
+   &:after 
+    content: ''
+    display: block 
+    height: 30px
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    background-image: linear-gradient(to top, #fff, rgba(255,255,255, 0))
+  &__list
+   height: 100%
+   padding: 15px 0
+   overflow: auto
+  &__item 
+   font-size: 14px
+   font-weight: 700
+   padding: 5px 15px
+   line-height: 18px
+   transition: all 0.4s ease
+   cursor: pointer
+   &:hover
+    background-color: #E9E717
+ &-body 
+  &.is-location-choose
+   .location-choose 
+    display: block 
+
+
+.header
+	.container
+	 display: flex 
+	 align-items: center
+	&-top 
+	 padding: 12px 0
+	 &__user
+		 &-nav
+	   text-transform: uppercase
+	 &__location
+	  margin-right: 80px
+	 &__user
+	  &-nav
+    margin-left: auto
+	&-main
+	 background-color: #003333
+	 padding: 20px 0
+	 .container 
+	  position: relative
+	  & > *
+	   &:not(:last-child)
+	    margin-right: 30px
+	  display: flex
+	  align-items: center
+	 &__logo
+	  text-align: center
+	  color: #fff
+	  font-size: 10px
+	  display: flex
+	  flex-direction: column
+	  align-items: center
+	  justify-content: center
+	 &__image
+		 width: 30px
+		 height: 30px
+		&__search
+		 display: flex 
+		 align-items: center
+		&__callback
+		 margin-left: 30px
+		 display: flex 
+		 flex-direction: column
+
+
+.search
+	&-input
+	 background-color: #fff 
+	 border-radius: 4px 
+	 height: 40px
+	 padding: 10px 15px
+	 line-height: 20px
+	 min-width: 100%
+	 margin-right: 10px
+	 border: 1px solid #ededed
+	 box-shadow: none
+	 &::placeholder
+	  font-size: 14px
+	  color: #bababa
+	&-icon
+	 color: #fff
+	 font-size: 21px
+	 cursor: pointer
+
+
+.user
+	&-nav
+	 &__link
+	  font-size: 12px
+	  color: #1fa349
+	  letter-spacing: 0.65px
+	  font-weight: 700
+	  transition: all 0.4s ease
+	  &:hover
+	   color: #107A32
+
+
+.main
+	&-nav
+	 &__list 
+	 	display: flex 
+	 	align-items: center
+	 &__item
+	  text-transform: uppercase
+	  font-size: 12px
+	 	margin-right: 40px
+	 	letter-spacing: 0.65px
+	 	&-link
+	 		border-bottom: 1px solid transparent
+	 	 transition: all 0.6s ease
+	 	 color: #333333
+	 	 &:hover
+	 		 border-bottom: 1px solid #333333
+	 	&:last-child
+	 	 margin-right: 0
+
+
+
