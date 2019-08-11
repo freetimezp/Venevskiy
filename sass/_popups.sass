@@ -92,6 +92,10 @@
 	   font-size: 15px
 	   color: #A49F9F
     font-weight: 600
+   &.error 
+	   border-color: red
+	   &.form-textarea__field::placeholder
+	    color: red
  &-line
   display: flex
   align-items: center
@@ -114,6 +118,13 @@
 		 font-size: 13px
 		 &--green
 	   color: #1fa349
+	  &--upgrade
+	   text-align: center
+	   font-size: 11px
+	   margin-top: 20px
+	   padding: 0 20px
+	   color: #545454
+	   font-style: italic
 	&-footer
 	 & > *
 	  margin: 10px 0
@@ -127,6 +138,8 @@
 	 &__link
 	  color: #bababa
 	  text-decoration: underline
+	  &:hover
+	   color: #7D7D7D
 	  
 
 .show-on-success
@@ -192,8 +205,6 @@
    margin-right: 10px
   &__number
    font-weight: 700
-
-
 
 
  	 

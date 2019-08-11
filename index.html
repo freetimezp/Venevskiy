@@ -1961,7 +1961,7 @@
 					<i class="fas fa-question-circle upgrade-icon"></i>
 				</div>
 				<!-- /.upgrade-icon__wrapper -->
-				<a href="#" class="upgrade-link">Что можно улушить на этой странице?</a>
+				<a href="#popup-upgrade" class="upgrade-link js-popup-link">Что можно улушить на этой странице?</a>
 			</div>
 			<!-- /.upgrade -->
 			
@@ -2264,8 +2264,131 @@
 		</div>
 		<!-- /.show-on-success -->
 	</div>
+	<!-- /.popup -->
+
+	<div class="popup mfp-hide" id="popup-upgrade">
+		<div class="hide-on-success">
+			<div class="popup-header">
+				<span class="popup-title">Что можно улучшить на этой странице?</span>
+				<div class="popup-close"><i class="fas fa-times"></i></div>
+			</div>
+			<!-- /.popup-header -->
+
+			<div class="popup-body">
+				<form action="" class="popup-form">
+					<div class="form-body">
+
+						<div class="form-line">
+							<div class="form-group form-group--required">
+								<label for="" class="form-group__label">Вопрос или комментарий</label>
+								<textarea type="text" class="form-textarea__field" name="req-textarea"  placeholder="Здравствуйте, на этой странице можно..."></textarea>
+							</div>
+							<!-- /.form-group -->
+						</div>
+						<!-- /.form-line -->
+
+						<div class="form-line">
+							<div class="form-group form-group--width-m">
+								<label for="" class="form-group__label">Электронная почта</label>
+						 	<input type="email" class="form-input__field form-input__field--width-s" placeholder="Введите свой email" name="email">
+							</div>
+							<!-- /.form-group -->
+							<span class="form-line__info form-line__info--upgrade">Мы быстрее исправим ошибку, если сможем связать с Вами для уточнения информации</span>
+						</div>
+						<!-- /.form-line -->
+						
+						<div class="form-line">
+							<div class="form-group form-group--width-m form-group--required">
+								<label for="" class="form-group__label">Контактный телефон</label>
+						 	<input type="phone" class="form-input__field form-input__field--width-s" placeholder="+380443924713" name="phone">
+							</div>
+							<!-- /.form-group -->
+						</div>
+						<!-- /.form-line -->
+
+					<div class="form-footer">
+						<div class="form-line">
+							<div class="form-group form-group--width-m">
+								<input type="submit" class="form-line__button" value="Предложить улучшение">
+							</div>
+							<!-- /.form-group-->
+						</div>
+						<!-- /.form-line -->
+						      
+						<p class="form-info">Задавая вопрос, Вы соглашаетесь с <a href="#" class="form-info__link">политикой конфиденциальности</a></p>
+	 			</div>
+					<!-- /.form-footer -->
+
+				</div>
+				<!-- /.form-body -->
+			</form>
+			</div>
+			<!-- /.popup-body -->
+		</div>
+		<!-- /.hide-on-success -->
+
+		<div class="show-on-success">
+			<div class="popup-header">
+				<span class="popup-title">Мы Вам перезвоним</span>
+				<div class="popup-close"><i class="fas fa-times"></i></div>
+			</div>
+			<!-- /.popup-header -->
+
+			<div class="popup-body">
+				<div class="form-success">
+					<div class="form-success__block">
+						<div class="form-success__info">
+							<span class="form-success__text">Номер Вашей заявки:</span>
+							<span class="form-success__number">1234</span>
+						</div>
+						<!-- /.form-success__info -->
+						<p class="form-success__descr">Менеджер позвонит Вам на указанный телефон сегодня <b>до 14:43</b> по Московскому времени</p>
+					</div>
+					<!-- /.form-success__block -->
+
+					<div class="form-success__block">
+						<span class="form-success__label">Не готовы ждать?</span>
+						<div class="form-success__row">
+							<div class="form-success__col">
+								<div class="form-success__contacts">
+									<div class="form-success__contacts-icon">
+										<i class="fas fa-phone-square-alt"></i>
+									</div>
+									<span class="form-success__contacts-text">Звоните круглосуточно</span>
+									<a href="tel:+380443924713" class="form-success__contacts-link">+3 8 044 392 47 13</a>
+									<a href="#" class="form-success__contacts-link-QR">Набрать номер по QR коду</a>
+								</div>
+								<!-- /.form-success__contacts -->
+							</div>
+							<!-- /.form-success__col -->
+							<div class="form-success__col">
+								<div class="form-success__contacts">
+									<div class="form-success__contacts-icon">
+										<i class="fas fa-envelope-open-text"></i>
+									</div>
+									<span class="form-success__contacts-text">Напишите нам email</span>
+									<a href="mailto:fromzpcity@gmail.com" class="form-success__contacts-link">fromzpcity@gmail.com</a>
+								</div>
+								<!-- /.form-success__contacts -->
+							</div>
+							<!-- /.form-success__col -->
+						</div>
+						<!-- /.form-success__row -->
+					</div>
+					<!-- /.form-success__block -->
+				</div>
+				<!-- /.form-success -->
+			</div>
+			<!-- /.popup-body -->
+		</div>
+		<!-- /.show-on-success -->
+
+	</div>
+	<!-- /.popup -->
 </section>
 <!-- /.s-popups -->
+
+
 
 
 
