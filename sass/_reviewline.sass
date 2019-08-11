@@ -1,0 +1,62 @@
+.fast-review
+	background-color: #DFDDDD
+	padding: 20px 20px 30px
+	width: 100%
+	margin-bottom: 10px
+	.popup__subtitle
+	 display: block
+	 padding-bottom: 20px
+
+.review-line
+	position: absolute
+	height: 100%
+	left: 1px 
+	z-index: 1
+	background-color: #F4E10A
+	&__wrapper
+	 margin: 30px 0
+	 position: relative
+	&__inner
+	 display: flex
+	 justify-content: space-between
+	 height: 5px
+	 background-color: #ededed
+	 align-items: flex-end
+	 cursor: pointer
+	&__item
+	 height: 20px
+	 border-left: 1px solid #ededed
+	 margin-bottom: -6px
+	 position: relative
+	 &:before 
+	  content: attr(data-fast-review)
+	  display: block
+	  font-size: 12px
+	  color: #8E8989
+	  position: absolute
+	  top: -20px
+	  left: 0
+	  white-space: nowrap
+	 &.review-line__item
+	  &--center
+	   &:before 
+		   left: -50%
+		   transform: translateX(-50%)
+		 &--right
+		  &:before 
+		   left: auto 
+		   right: 0
+	&__number
+	 font-size: 14px
+	 line-height: 24px
+	 width: 24px
+	 height: 24px
+	 text-align: center
+	 position: absolute
+	 top: 100%
+	 left: -12px
+	 border-radius: 50%
+	 cursor: pointer
+	 transition: all 0.4s ease
+	 &:hover
+	  background-color: #fff
