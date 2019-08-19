@@ -134,6 +134,13 @@ $(document).ready(function() {
 			$(this).parent().addClass('review-line__item--active');
 			$('.review-line').css('width',left - 1);
 		});
+
+		$(document).on('click','.review-line__item', function() {
+			var leftX = $(this).position().left;
+			$(this).siblings().removeClass('review-line__item--active');
+			$(this).addClass('review-line__item--active');
+			$('.review-line').css('width',leftX - 1);
+		});
 	};
 
 
