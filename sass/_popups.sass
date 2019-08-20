@@ -235,7 +235,70 @@ body
   background: #003333
   opacity: 0.3
 
-	  
+
+.contacts-popup
+ display: inline-block
+ position: relative
+ &.contacts-popup--active
+  .contacts-popup__body
+   display: flex
+	&__toggle
+	 cursor: pointer
+	 margin-left: 15px
+	 text-decoration: underline
+	 color: rgba(#fff,0.9)
+	&__body 
+	 display: none 
+	 background-color: #fff 
+	 position: absolute
+	 &:after 
+		 content: ''
+		 width: 0
+		 height: 0
+		 border: 20px solid transparent
+		 border-top: 20px solid red
+		 position: absolute
+		 bottom: -12px 
+		 right: 20px
+	&__info 
+	 flex: 0 0 260px
+	 max-width: 260px 
+	 width: 260px
+	 padding: 40px 20px
+	&__close
+	 margin-left: auto
+	 font-size: 35px
+	 font-weight: 300
+	 color: #939393
+	 cursor: pointer
+	 opacity: 0.4
+	 transition: all 0.4s ease
+	 &:hover
+	  opacity: 1
+	 &-icon
+	  font-size: 20px
+	  color: #B0ABAB
+	&__title 
+	 font-size: 18px
+	 display: block 
+	 line-height: 1.44
+	 margin-bottom: 10px
+	&__text 
+	 font-size: 14px
+	 line-height: 18
+	 margin-bottom: 10px
+	&__block 
+	 display: flex 
+	 flex-direction: column
+	 margin-bottom: 20px
+	&__label 
+	 font-size: 14px
+	 font-weight: 700
+
+
+
+
+	 
 
 
 

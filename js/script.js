@@ -145,6 +145,18 @@ $(document).ready(function() {
 
 
 
+	var contactsPopup = function() {
+		$(document).on('click','.contacts-popup__toggle', function() {
+			$(this).parent().addClass('contacts-popup--active');
+		});
+
+		$(document).on('click','.contacts-popup__close', function() {
+			$(this).closest('.contacts-popup').removeClass('contacts-popup--active');
+		});
+	};
+
+
+
  
  sandwich();
 	popularCategoriesSlider();
@@ -154,6 +166,7 @@ $(document).ready(function() {
 	popupLink();
 	formValidate();
 	reviewLine();
+	contactsPopup();
 /*......*/
 
 });
