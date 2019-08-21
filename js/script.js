@@ -147,7 +147,7 @@ $(document).ready(function() {
 
 	var contactsPopup = function() {
 		$(document).on('click','.contacts-popup__toggle', function() {
-			$(this).parent().addClass('contacts-popup--active');
+			$(this).parent().toggleClass('contacts-popup--active');
 		});
 
 		$(document).on('click','.contacts-popup__close', function() {

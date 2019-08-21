@@ -242,6 +242,11 @@ body
  &.contacts-popup--active
   .contacts-popup__body
    display: flex
+ &__map 
+  flex: 1
+  iframe
+   width: 100%
+   height: 100%
 	&__toggle
 	 cursor: pointer
 	 margin-left: 15px
@@ -249,34 +254,39 @@ body
 	 color: rgba(#fff,0.9)
 	&__body 
 	 display: none 
+	 width: 690px
+	 padding: 5px
 	 background-color: #fff 
+	 color: #706D6D
 	 position: absolute
+	 bottom: 25px
+	 right: -20px
+	 box-shadow: 0 0 30px 0 rgna(0,0,0, 0.2)
 	 &:after 
 		 content: ''
 		 width: 0
 		 height: 0
-		 border: 20px solid transparent
-		 border-top: 20px solid red
+		 border: 10px solid transparent
+		 border-top: 10px solid #fff
 		 position: absolute
-		 bottom: -12px 
-		 right: 20px
+		 bottom: -19px 
+		 right: 35px
 	&__info 
 	 flex: 0 0 260px
 	 max-width: 260px 
 	 width: 260px
-	 padding: 40px 20px
+	 padding: 10px 20px 40px
 	&__close
-	 margin-left: auto
-	 font-size: 35px
+	 text-align: right
 	 font-weight: 300
-	 color: #939393
+	 color: #848484
 	 cursor: pointer
 	 opacity: 0.4
 	 transition: all 0.4s ease
 	 &:hover
 	  opacity: 1
 	 &-icon
-	  font-size: 20px
+	  font-size: 25px
 	  color: #B0ABAB
 	&__title 
 	 font-size: 18px
@@ -284,8 +294,9 @@ body
 	 line-height: 1.44
 	 margin-bottom: 10px
 	&__text 
-	 font-size: 14px
-	 line-height: 18
+	 display: block
+	 font-size: 13px
+	 line-height: 15px
 	 margin-bottom: 10px
 	&__block 
 	 display: flex 
@@ -294,7 +305,10 @@ body
 	&__label 
 	 font-size: 14px
 	 font-weight: 700
-
+	&__qr 
+	 &-image 
+	  max-width: 150px
+	  margin-top: 20px
 
 
 
