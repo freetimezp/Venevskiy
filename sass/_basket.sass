@@ -5,6 +5,7 @@
 	 display: flex 
 	 flex-direction: column
 	 color: #fff
+	 position: relative
 	 &__icon
 	  font-size: 24px
 	  cursor: pointer
@@ -12,8 +13,28 @@
 	 &__title
 	  font-weight: 700
 	  line-height: 20px	
+	  @media screen and (max-width: 1239px)
+	   display: none
 	 &__count
 	  font-size: 12px
 	  line-height: 18px
 	  cursor: pointer
+	  @media screen and (max-width: 1239px)
+	   display: none
+	 &__number
+	  position: absolute
+	  display: none
+	  font-size: 12px
+	  padding: 4px 5px
+	  background-color: #EEF10A
+	  border-radius: 50%
+	  text-align: center
+	  line-height: 14px
+	  color: #333030
+	  font-weight: 700
+	  top: -5px
+	  right: -5px
+	  cursor: pointer
+	  @media screen and (max-width: 1239px)
+    display: block
 
