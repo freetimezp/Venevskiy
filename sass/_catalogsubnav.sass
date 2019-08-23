@@ -13,16 +13,15 @@
 	 overflow: auto
 	 align-items: center
 	 border-radius: 0 4px 4px 0
+	 @media screen and (max-width: 1231px)
+	  width: 483px
 	 &__col 
 	  max-width: 290px
 	  margin-right: 15px
 	  margin-bottom: 15px
-	  // &--1
-	  //  background-color: #9DD2E5
-	  // &--2
-	  //  background-color: #A8EB96
-	  // &--3
-	  //  background-color: #EEDD6A
+	  @media screen and (max-width: 1231px)
+	   max-width: 430px
+	   margin-right: 0
 	 &__header
 	  display: flex 
 	  margin-bottom: 10px
@@ -37,7 +36,10 @@
 	  font-size: 10px
 	  color: #9C9898
 	 &__list
-	  width: 255px
+	  max-width: 255px
+	  @media screen and (max-width: 1231px)
+	   width: 430px
+	   max-width: 430px
 	 &__item
 	  margin-bottom: 10px
 	  .catalog-subnav__text
@@ -45,7 +47,9 @@
 	   font-size: 12px
 	   line-height: 14px
 				font-weight: 500
-
+    @media screen and (max-width: 1231px)
+     width: 400px
+	    max-width: 430px
  
 	
 	
