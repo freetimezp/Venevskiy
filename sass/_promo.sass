@@ -2,14 +2,19 @@
 	&-header
 	 display: flex
 	 align-items: center
+	 @media screen and (max-width: 1239px)
+	  .section-title
+	   white-space: nowrap
+	   font-size: 35px
 	&-prev
 	 display: flex
-	 align-items: center
 	&-item 
 	 flex: 1
 	 margin-right: 30px
 	 border-radius: 4px
 	 overflow: hidden
+	 @media screen and (max-width: 1239px)
+	  margin-right: 10px
 	 &:last-child
 	  margin-right: 0
 	 &__image
@@ -33,6 +38,13 @@
 	  color: #120808
 	  border-radius: 4px
 	  transition: all 0.6s ease
+	  @media screen and (max-width: 1239px)
+	   text-align: center
+	   max-width: calc(100% - 20px)
+	   padding: 4px 10px
+	   white-space: nowrap
+	   text-overflow: ellipsis
+	   overflow: hidden
 	  &:hover
 	   background-color: #D3B905
 	   border: 2px solid #D3B905

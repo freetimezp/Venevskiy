@@ -16,19 +16,38 @@
 	&-callback
 	 display: flex
 	 align-items: center
-	 margin-bottom: 20px
+  margin-bottom: 30px
 	 &__icon
 	  font-size: 50px
 	  margin-right: 20px
 	&-main 
-	 display: flex 
+	 display: flex
+  .footer-nav
+   flex: 2 
+   @media screen and (max-width: 1239px)
+    flex: 1
 	 .footer-col
 	  margin-right: 20px
+   @media screen and (max-width: 1239px)
+    margin-right: 0
 	  &:last-child 
 	   margin-right: 0
 	&-col
   flex: 1
  &-nav
+  display: flex
+  @media screen and (max-width: 1239px)
+   display: flex 
+   flex-direction: column
+  & > *
+   flex: 1
+   margin-right: 20px
+   @media screen and (max-width: 1239px)
+    margin-bottom: 30px
+    &:last-child
+     margin-bottom: 0
+  &:last-child 
+   margin-right: 0
   &__item
    margin-bottom: 10px
    font-size: 14px

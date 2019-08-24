@@ -42,7 +42,17 @@ $(document).ready(function() {
 			slidesToScroll: 1,
 			prevArrow: '.slider-nav--prev',
 			nextArrow: '.slider-nav--next',
-			infinite: false
+			infinite: false,
+			responsive: [
+				{
+					breakpoint: 1239,
+					settings: {
+						slidesToShow: 3,
+						arrows: false,
+						dots: true 
+					}
+				}
+			]
 		});
 	};
 
