@@ -80,7 +80,7 @@ $(document).ready(function() {
 			}
 		});
 
-		$(document).on('click', '.location-choose__item', function() {
+		$(document).on('click', '.location-choose__item, .location-choose__close', function() {
 			$(this).closest('.location-body').removeClass('is-location-choose');
 		});
 

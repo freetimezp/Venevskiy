@@ -48,9 +48,24 @@
 	 border-radius: 4px
 	 border: 1px solid #EBE7E7
 	 box-shadow: 1px 2px 15px rgba(0,0,0, 0.2)
+	 @media screen and (max-width: 1239px)
+	 	max-width: 720px
+	 @media screen and (max-width: 767px)
+	  border: 2px solid #F0FF01
+	  padding: 10px 20px 20px
+	 	position: fixed
+	 	flex-direction: column
+	 	bottom: 0
+	 	left: 0
+	 	right: 0
+	 	top: auto
+	 	max-width: 100%
 	 & > *
 	  &:not(:last-child)
 	   margin-right: 15px
+	   @media screen and (max-width: 767px)
+	    margin-right: 0
+	    margin-bottom: 10px
 	 &:before 
    content: ''
    width: 0
@@ -61,9 +76,13 @@
    position: absolute
    left: 60px
    z-index: 1
+   @media screen and (max-width: 767px)
+    display: none
 	 &__text
 	  font-size: 18px
 	  line-height: 1.44
+	  text-overflow: ellipsis
+	  overflow: hidden
 	 &__buttons
 	  display: flex 
 	  align-items: center
@@ -87,6 +106,7 @@
 		  color: #249016
 	&-choose
 	 display: none
+	 flex-direction: column
 	 position: absolute
 	 width: 210px
 	 top: 10px
@@ -96,6 +116,11 @@
 	 box-shadow: 0 0 30px 0 rgba(0,0,0, 0.2)
   border-radius: 4px
   border: 2px solid #E9E717
+  @media screen and (max-width: 767px)
+   width: calc(100% - 40px)
+   top: 60px
+   right: 20px
+   bottom: 40px
   &__header
    border-bottom: 2px solid #E9E717
   &__input
@@ -109,6 +134,8 @@
    max-height: 240px
    display: flex 
    flex-direction: column
+   @media screen and (max-width: 767px)
+    max-height: 100%
    &:before 
     content: ''
     height: 30px
@@ -140,10 +167,35 @@
    cursor: pointer
    &:hover
     background-color: #E9E717
+  &__close
+   position: absolute
+   right: 0px
+   top: -30px
+   display: none
+   width: 30px
+   height: 30px
+   cursor: pointer
+   &-icon 
+    font-size: 25px
+    color: #D6E30C
+    align-items: center
+    justify-content: center
+   @media screen and (max-width: 767px)
+    display: flex
+    font-weight: 300
  &-body 
   &.is-location-choose
+   @media screen and (max-width: 767px)
+    position: fixed
+    top: 0
+    left: 0 
+    right: 0
+    bottom: 0
+    background-color: rgba(#003333, 0.3)
+    z-index: 2
    .location-choose 
-    display: block 
+    display: flex 
+
 
 
 .header
@@ -162,11 +214,14 @@
 	 &__user
 	  &-nav
     margin-left: auto
+    padding-right: 40px
 	&-main
 	 background-color: #003333
 	 padding: 20px 0
 	 display: flex
 	 align-items: center
+	 &:last-child
+	  margin-right: 0
 	 .container 
 	  position: relative
 	  & > *
