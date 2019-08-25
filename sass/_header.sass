@@ -117,7 +117,7 @@
   border-radius: 4px
   border: 2px solid #E9E717
   @media screen and (max-width: 767px)
-   width: calc(100% - 40px)
+   width: calc(100% - 60px)
    top: 60px
    right: 20px
    bottom: 40px
@@ -204,6 +204,8 @@
 	 align-items: center
 	&-top 
 	 padding: 12px 0
+	 @media screen and (max-width: 767px)
+	  display: none
 	 &__user
 		 &-nav
 	   text-transform: uppercase
@@ -215,6 +217,8 @@
 	  &-nav
     margin-left: auto
     padding-right: 40px
+    @media screen and (max-width: 767px)
+     padding-right: 0
 	&-main
 	 background-color: #003333
 	 padding: 20px 0
@@ -229,6 +233,8 @@
 	   margin-right: 40px
 	   @media screen and (max-width: 1239px)
 	    margin-right: 30px
+	   @media screen and (max-width: 767px)
+	    flex: 0
 	  @media screen and (max-width: 1239px)
 	   .header-main
 	    &__logo
@@ -243,10 +249,15 @@
 	    &__callback
 	     order: 5
 	     margin-right: 0
+	     margin-left: 0
+      padding-right: 40px
+      @media screen and (max-width: 767px)
+       padding-right: 0
 	    &__basket-prev
 	     order: 4
-	     margin-left: 0
-	     margin-right: 20px
+	     margin: 0 40px
+	     @media screen and (max-width: 767px)
+	      margin: 0
 	     .basket-prev__icon
 	      margin-bottom: 0
 	      font-size: 30px	
@@ -258,6 +269,8 @@
 	  flex-direction: column
 	  align-items: center
 	  justify-content: center
+	  @media screen and (max-width: 767px)
+	   display: none
 	 &__image
 		 width: 30px
 		 height: 30px
@@ -268,6 +281,8 @@
 		 margin-left: 30px
 		 display: flex 
 		 flex-direction: column
+		 @media screen and (max-width: 767px)
+		  display: none
 
 
 .search

@@ -11,8 +11,16 @@
 	  white-space: nowrap
 	  .sandwich
 	   margin-right: 10px
+	   @media screen and (max-width: 767px)
+	    display: none
 	 &__title
 	  font-size: 14px
+	  @media screen and (max-width: 767px)
+	   display: none
+	  &-mobile
+	   display: none
+	   @media screen and (max-width: 767px)
+	    display: block
 	 &__body
 	  display: none
 	  position: absolute
