@@ -11,6 +11,14 @@ $(document).ready(function() {
 			catalogOpen.toggleClass('catalog-nav--active');
 		});
 
+		if($(window).width() < 768) {
+			$(document).on('click', '.sandwich', function() {
+				$(this).toggleClass('sandwich--active');
+				$("body").toggleClass('fixed');
+				$('.mobile-nav__wrapper').toggleClass('mobile-nav__wrapper--active');
+			});
+		}
+
 	};
 	
 

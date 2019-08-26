@@ -19,8 +19,17 @@
 	   display: none
 	  &-mobile
 	   display: none
+	   padding-right: 25px
+	   position: relative
 	   @media screen and (max-width: 767px)
 	    display: block
+	   &:after 
+	    content: ''
+	    position: absolute
+	    right: 0
+	    top: 5px
+	    border: 8px solid transparent
+	    border-top: 8px solid #C1C2C1
 	 &__body
 	  display: none
 	  position: absolute
@@ -32,6 +41,12 @@
 	  border-radius: 4px 0 0 4px
 	  box-shadow: 0 0 5px 0 rgba(159,197,178, 0.5)
 	  transition: all 0.6s ease
+	  @media screen and (max-width: 1239px)
+    left: 20px 
+    max-width: 736px
+    box-shadow: 3px 3px 10px 0 rgba(159,197,178, 0.1)
+   @media screen and (max-width: 767px)
+    top: 45px
 	  &:before 
 	   content: ''
 	   width: 0
@@ -40,11 +55,12 @@
 	   border-bottom: 10px solid #fff
 	   top: -19px
 	   position: absolute
-	   left: 113px
-	  @media screen and (max-width: 1239px)
-    left: 20px 
-    max-width: 736px
-    box-shadow: 3px 3px 10px 0 rgba(159,197,178, 0.1)
+	   left: 157px
+	   @media screen and (max-width: 767px)
+     left: 110px
+     top: -15px
+     border: 8px solid transparent
+	    border-bottom: 8px solid #fff
 	 &__item
 	  transition: all 0.6s ease
 	  &:first-child

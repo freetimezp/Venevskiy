@@ -17,16 +17,17 @@
 
 <title>Venevskiy</title>
 </head>
+
 <body>
 
 <header class="header">
 	<div class="header-top">
 		<div class="container">
 		 <div class="header-top__location location">
-				<a href="#" class="location-logo">
-					<i class="fas fa-map-marker-alt"></i>
-				</a>
 				<div class="location-header">
+	 			<a href="#" class="location-logo">
+	 				<i class="fas fa-map-marker-alt"></i>
+			 	</a>
 					<span class="location-current">Нижний Новгород</span>
 				</div>
 				<!-- /.location-header -->
@@ -39,7 +40,6 @@
 						</div>
 					</div>
 					<!-- /.location-question -->
-
 
 					<div class="location-choose">
 						<div class="location-choose__close">
@@ -75,6 +75,7 @@
 					</div>
 					<!-- /.location-choose -->
 				</div>
+				<!-- /.location-body -->
 			</div>
 			<!-- /.header-top__location -->
 
@@ -110,6 +111,113 @@
 
 	<div class="header-main">
 		<div class="container">
+   <div class="mobile-nav__wrapper">
+   	<div class="sandwich">
+   		<div class="sandwich__line sandwich__line--top"></div>
+					<div class="sandwich__line sandwich__line--middle"></div>
+					<div class="sandwich__line sandwich__line--bottom"></div>
+   	</div>
+   	<!-- /.sandwich -->
+
+   	<div class="mobile-nav__content">
+					<div class="mobile-nav__main">
+						<ul class="mobile-nav__list">
+	   			<li class="mobile-nav__item">
+	   				<a href="#" class="mobile-nav__link">Оплата и доставка</a>
+	   			</li>
+	   			<li class="mobile-nav__item">
+	   				<a href="#" class="mobile-nav__link">Гарантия</a>
+	   			</li>
+	   			<li class="mobile-nav__item">
+	   				<a href="#" class="mobile-nav__link">Услуги</a>
+	   			</li>
+	   			<li class="mobile-nav__item">
+	   				<a href="#" class="mobile-nav__link">Компания</a>
+	   			</li>
+	   			<li class="mobile-nav__item">
+	   				<a href="#" class="mobile-nav__link">Контакты</a>
+	   			</li>
+	   		</ul>
+
+	   		<ul class="mobile-nav-user__list">
+	   			<li class="mobile-nav-user__item">
+	   				<a href="#" class="mobile-nav-user__link">Войти</a>
+	   			</li>
+	   		</ul>
+
+	   		<div class="mobile-nav__location">
+			   	<div class="location-header">
+				 			<a href="#" class="location-logo">
+				 				<i class="fas fa-map-marker-alt"></i>
+						 	</a>
+								<span class="location-current">Нижний Новгород</span>
+							</div>
+							<!-- /.location-header -->
+
+							<div class="location-body">
+								<div class="location-question">
+									<span class="location-question__text">Ваш регион доставки Нижний Новгород?</span>
+									<div class="location-question__buttons">
+										<div class="location-question__button location-question__button--green" data-location="yes">Да, верно!</div>
+										<div class="location-question__button location-question__button--white" data-location="no">Нет! Уточнить регион!</div>
+									</div>
+								</div>
+								<!-- /.location-question -->
+
+								<div class="location-choose">
+									<div class="location-choose__close">
+										<i class="fas fa-times location-choose__close-icon"></i>
+									</div>
+									<!-- /.location-choose__close -->
+									
+									<div class="location-choose__header">
+										<input type="text" class="location-choose__input" placeholder="Поиск по городу или индексу">
+									</div>
+									<!-- /.location-choose__header -->
+
+									<div class="location-choose__body">
+										<ul class="location-choose__list">
+											<li class="location-choose__item">Москва</li>
+											<li class="location-choose__item">Санкт-Питербург</li>
+											<li class="location-choose__item">Екатеринбург</li>
+											<li class="location-choose__item">Нижний новгород</li>
+											<li class="location-choose__item">Пермь</li>
+											<li class="location-choose__item">Казань</li>
+											<li class="location-choose__item">Новосибирск</li>
+											<li class="location-choose__item">Челябинск</li>
+											<li class="location-choose__item">Москва</li>
+											<li class="location-choose__item">Санкт-Питербург</li>
+											<li class="location-choose__item">Екатеринбург</li>
+											<li class="location-choose__item">Нижний новгород</li>
+											<li class="location-choose__item">Пермь</li>
+											<li class="location-choose__item">Казань</li>
+											<li class="location-choose__item">Новосибирск</li>
+											<li class="location-choose__item">Челябинск</li>
+										</ul>
+									</div>
+									<!-- /.location-choose__body -->
+								</div>
+								<!-- /.location-choose -->
+							</div>
+							<!-- /.location-body -->
+	   		</div>
+	   		<!-- /.mobile-nav__location -->
+					</div>
+					<!-- /.mobile-nav__main -->
+
+
+		   <div class="mobile-nav__callback callback">
+						<span class="callback-descr">Звоните круглосуточно</span>
+						<a href="tel:+80443924713" class="callback-phone">+8 044 392-47-13</a>
+						<a href="#" class="callback-link">Заказать звонок</a>
+					</div>
+					<!-- /.mobile-nav__callback -->
+   	</div>
+   	<!-- /.mobile-nav__content -->
+   </div>
+   <!-- /.mobile-nav__wrapper -->
+
+
 			<div class="header-main__logo">
 				<img src="img/header-logo.png" alt="Строительные материалы" class="header-main__image">
 				<span class="header-main__text">Продажа стройматериалов</span>
@@ -885,33 +993,37 @@
 			</div>
 			<!-- /.header-main__catalog catalog-->
 
-			<div class="header-main__search search">
-				<input type="text" class="search-input" placeholder="Артикул или название товара">
-				<div class="search-icon">
-					<i class="fas fa-search"></i>
+			<div class="header-actions">
+				<div class="header-main__search search">
+					<input type="text" class="search-input" placeholder="Артикул или название товара">
+					<div class="search-icon">
+						<i class="fas fa-search"></i>
+					</div>
+					<!-- /.search-icon -->
 				</div>
-			</div>
-			<!-- /.header-main__search -->
+				<!-- /.header-main__search -->
 
-			<div class="header-main__callback callback">
-				<span class="callback-descr">Звоните круглосуточно</span>
-				<a href="tel:+80443924713" class="callback-phone">+8 044 392-47-13</a>
-				<a href="#" class="callback-link">Заказать звонок</a>
-			</div>
-			<!-- /.header-main__callback -->
-
-			<div class="header-main__basket-prev basket-prev">
-				<div class="basket-prev__icon">
-					<i class="fas fa-shopping-cart"></i>
+				<div class="header-main__callback callback">
+					<span class="callback-descr">Звоните круглосуточно</span>
+					<a href="tel:+80443924713" class="callback-phone">+8 044 392-47-13</a>
+					<a href="#" class="callback-link">Заказать звонок</a>
 				</div>
-				<span class="basket-prev__title">Ваш заказ</span>
-				<span class="basket-prev__count">Здесь пока пусто</span>
-				<span class="basket-prev__number">98</span>
+				<!-- /.header-main__callback -->
+
+				<div class="header-main__basket-prev basket-prev">
+					<div class="basket-prev__icon">
+						<i class="fas fa-shopping-cart"></i>
+					</div>
+				 <!-- /.basket-prev__icon -->
+					<span class="basket-prev__title">Ваш заказ</span>
+					<span class="basket-prev__count">Здесь пока пусто</span>
+					<span class="basket-prev__number">98</span>
+				</div>
+				<!-- /.basket-prev -->
 			</div>
-			<!-- /.basket-prev -->
+			<!-- /.header-actions -->
 		</div>
 		<!-- /.container -->
-
 	</div>
 	<!-- /.header-main -->
 </header>
